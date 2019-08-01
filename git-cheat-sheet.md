@@ -10,8 +10,10 @@
 ## Where is Git installed
 `which git`  locates the directory where Git is installed 
 
-## Repositories
+## Remote Repositories
 `git remote -v` list of remotes for a Git repository
+`git remote add origin {{Repo URL}}` adds a remote origin for your local Git repo
+`git push -u origin master` push the content to the remote repo
 
 ## Information
 - Git does not track empty directories
