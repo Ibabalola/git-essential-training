@@ -90,3 +90,5 @@ Why?
 - Master tracking
 
 ## Stash
+
+- By default stash does not include untracked files and that is because there is no conflict
