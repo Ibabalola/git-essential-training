@@ -1,4 +1,4 @@
-## Stash
+# Stash
 
 `git stash save "{{name}}"` name is descriptive label to identify the stash
 `git stash list` to view all stashes with the Git project 

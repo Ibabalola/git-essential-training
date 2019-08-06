@@ -1,4 +1,4 @@
-## Branches
+# Branches
 
 #### Help 
 `git help branch` To bring the help documentation for branching
