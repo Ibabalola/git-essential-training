@@ -22,6 +22,12 @@
 
 `git branch -D {{branch_name}}` to force delete a branch
 
+`git branch -r` shows our remote branches
+
+`git branch -a` shows us all of our branches, both remotes and local
+
+`git branch -u <origin name>/<branch name> <branch name>` use to set an upstream for a branch
+
 #### merge code
 `git merge {{branch_name}}` will merge change from feature branch the current branch
 

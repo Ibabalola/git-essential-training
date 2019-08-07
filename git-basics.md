@@ -6,7 +6,7 @@ __Purpose:__ Keeps track of changes
 __Version Control System (VCS)__ 
 __Source Code Management (SCM)__
 
-# Histroy
+# History
 __Source Code Control System (SCCS)__
 1972: closed source, free with unix
 Stored original verison and sets of changes

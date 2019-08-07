@@ -18,9 +18,9 @@
 
 `git push -u origin master` push the content to the remote repo
 
- `git push --set-upstream origin {{feature_branch}}` to push the current branch and set the remote as upstream
+`git push --set-upstream origin {{feature_branch}}` to push the current branch and set the remote as upstream
 
- `git push --delete <remote_name> <branch_name>` delete remote branch // remote name is origin
+`git push --delete <remote_name> <branch_name>` delete remote branch // remote name is origin
 
 ## Information
 - Git does not track empty directories

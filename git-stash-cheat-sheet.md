@@ -1,4 +1,4 @@
-# Stash
+# Stash Cheat Sheet
 
 `git stash save "{{name}}"` name is descriptive label to identify the stash
 
