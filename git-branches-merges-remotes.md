@@ -92,3 +92,5 @@ Why?
 ## Stash
 
 - By default stash does not include untracked files and that is because there is no conflict
+- Changes can be stashed for later retrieval and use
+- When you either pop or apply your changes into your working directory it is possible of it to cause merge conflicts

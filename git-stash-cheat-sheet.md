@@ -7,3 +7,7 @@
 `git stash show stash@{0}` returns a diff stat by default, to show what is in the stash
 
 `git stash show -p stash@{0}` returns to show a patch of what is in the stash
+
+`git stash pop` by default returns the first stash in the list, alternatively you can provide a stash@{n} to get a specific stash
+
+`git stash apply` bring changes into the working directory but keeps the stash changes
