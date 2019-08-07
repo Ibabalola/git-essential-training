@@ -8,9 +8,11 @@
 
 `git branch {{branch_name}}` to create a branch, branch names should not have any spaces in them
 
+`git branch <branch name> <origin name>` used to check out remote branches to create a local copy
+
 `git checkout {{branch_name}}` to switch branches
 
-`git checkout -b {{branch_name}}` to create a new branch and switch to it with the same command
+`git checkout -b {{branch_name}} {{origin name}}` to create a new branch and switch to it with the same command
 
 `git branch --merged` to see which branches have been merged into the current branch
 

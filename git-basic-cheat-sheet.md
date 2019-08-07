@@ -11,17 +11,6 @@
 ## Where is Git installed
 `which git`  locates the directory where Git is installed 
 
-## Remote Repositories
-`git remote -v` list of remotes for a Git repository
-
-`git remote add origin {{Repo URL}}` adds a remote origin for your local Git repo
-
-`git push -u origin master` push the content to the remote repo
-
-`git push --set-upstream origin {{feature_branch}}` to push the current branch and set the remote as upstream
-
-`git push --delete <remote_name> <branch_name>` delete remote branch // remote name is origin
-
 ## Information
 - Git does not track empty directories
 - To track empty files place a .gitkeep file with empty directories

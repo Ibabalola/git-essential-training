@@ -78,7 +78,7 @@ Why?
 ### Merge Conflicts
 
 - Differenct  changes in two different branches on the same line
--  Abort merge
+- Abort merge
 - Resolve the conflicts manaually
 - Use a merge tool
 
@@ -94,3 +94,10 @@ Why?
 - By default stash does not include untracked files and that is because there is no conflict
 - Changes can be stashed for later retrieval and use
 - When you either pop or apply your changes into your working directory it is possible of it to cause merge conflicts
+
+## Fetch 
+
+- Fetch before you work *This should be the first thing you do in the morning*
+- Fetch before you push
+- Fetch before you go offline
+- Fetch often
