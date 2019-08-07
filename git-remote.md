@@ -15,5 +15,3 @@
 `git clone <URL> <directory name>` clone a respository held in GitHub
 
 `git push` pushes changes to our tracked remote origin repository
-
-
