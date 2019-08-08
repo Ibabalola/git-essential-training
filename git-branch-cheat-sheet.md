@@ -24,15 +24,23 @@
 
 `git branch -D {{branch_name}}` to force delete a branch
 
-`git branch -r` shows our remote branches
+`git branch -r` shows our remote tracking branches
 
 `git branch -a` shows us all of our branches, both remotes and local
 
 `git branch -u <origin name>/<branch name> <branch name>` use to set an upstream for a branch
 
 #### merge code
-`git merge {{branch_name}}` will merge change from feature branch the current branch
+`git merge <branch_name>` will merge change from feature branch the current branch
 
 `git merge --abort` to back out of the merge
 
 `git mergetool` conflict resolution tool
+
+`git merge <origin name>` will bring all the fetched changes into your local master branch
+
+#### Prune
+
+`git remote prune origin` to used to delete the remote tracking branch, the snapshot of the remote branch add `--dry-run` to see what it will do / look like
+
+`git prune` removes all unreachable objects

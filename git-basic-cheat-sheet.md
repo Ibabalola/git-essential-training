@@ -71,6 +71,10 @@ i.e.
 
 `git add {{name}}*` where * refers to a wildcard character to match all changed files in the working tree 
 
+`git add --interactive` to enter interactive staging mode or `-i` for short
+
+`git add --patch` to add a hunk to the staged tree `-p` for short
+
 #### Delete Files
 `git rm {{file_name}}`   deletes the specified file from the working tree and the index
 
@@ -88,7 +92,7 @@ i.e.
 
 `git diff --color-words` shows only the words that are different, helps to zero in on the change
 
-`git diff {{Older SHA-1 Checksum}}..{{Newer SHA-1 Checksum}} --color-words` show the diff between to different commits that are not sequential
+`git diff {{Older commit}}..{{Newer commit}} --color-words` show the diff between to different commits that are not sequential
 
 `git diff {{treeish}}..{{treeish}}` any treeish object can be compared even branches
 
@@ -99,28 +103,11 @@ i.e.
 - q to quit / exit paginator
 
 #### Show Files
-`git show {{SHA-1 Checksum}} --color-words` - 6 - 9 characters is enough for the SHA-1 Checksum, show the diff of a past commit
+`git show {{commit}} --color-words` - 6 - 9 characters is enough for the SHA-1 Checksum, show the diff of a past commit
 
-- adding carat symbol after a SHA-1 Checksum points to the parent commit on any tree-ish reference e.g. {{SHA-1 Checksum}}^
-- adding two carat symbols after a SHA-1 Checksum tells Git to go to the Grandparent e.g. {{SHA-1 Checksum}}^^
+- adding carat symbol after a SHA-1 Checksum points to the parent commit on any tree-ish reference e.g. {{commit}}^
+- adding two carat symbols after a SHA-1 Checksum tells Git to go to the Grandparent e.g. {{commit}}^^
 - adding tilde symbol plus a number tell Git to go back n generations e.g. HEAD~1, HEAD ~ has the same effect because the default nuumber for n is 1
-
-#### Undo Files
-`git checkout -- {{filename}}` reverts the specified file to the version in the repository of the HEAD of the current branch
-
-`git checkout -- .` reverts all files to the version in repository of the current branch
-
-`git checkout {{SHA-1 Checksum}} -- {{filename}}` reverts the specified file to the version in the repository of the commit of the SHA-1 Checksum of the current branch
-
-`git reset HEAD {{filename}}`  to remove files from the staged tree to the working tree
-
-`git revert {{SHA-1 Checksum}}` reverts changes made in a commit
-
-`git clean {{ -i | -n | -f }}` will remove untracked files, need to provide a flag
-
-- i = interactive
-- n = do a dry run, let's try this out, let's see what would happen
-- f = runs the command, forces it to clean the files, do with caution 
 
 #### Commit Files
 `git commit -m "{{message}}"`  files are now tracked
@@ -137,46 +124,34 @@ i.e.
 
 `--allow-unrelated-histories` to force the merge to happen.
 
-#### Loging  / Filtering
-`git log -n 5` returns the 5 most recent commit logs
+#### Tags
 
-`git log --since=2019-01-01` returns commits since / after a certain date
+`git tag <tag name> <commit>` add a lightweight tag
 
-`git log --until=2019-01-01` returns commits until a certain date
+`git tab <tag name> -am "<message>" <commit>` add an annotated tag (most common)
 
-`git log --until="3 days ago"` returns commits until a certain date
+`git tag --list` list all tags use `-l` for a shortcard 
 
-`git log --after=2.weeks --before=3.days` specifying a period of time
+`git tab -l <Regular Expression>` to filter the tags
 
-`git log --author="Isaac"` returns commits by an author
+`git tab -l -n` list tags with annotations
 
-`git log --grep="{{RE}}"` returns commits that have a commit message that match a regular expression
+`git tag --delete <tag name>` to delete a tag use `-d` for shortcode
 
-`git log --oneline` gives the file line of each commit
+`git push <origin name> <tag name>` to push a tag to a remote server
 
-`git log {{SHA-1 Checksum}}..HEAD` returns the all the commits between each treeish object
+Delete remote tags like remote branches
 
-`git log {{file-name}}` to ask Git to focus on commits on a specified file
+```
+git push origin :<tag name>
+git push --delete origin <tag name>
+git push -d origin <tag name>
+```
 
-`git log -p` -p is for patch, a patch is the same thing as a changeset, what is the patch that will change the repository from one conditions to another
+`git push origin --tags` to push all tags to a remote server
 
-`git log --stat` will show you statistics about what was changed in each commit
+`git fetch --tags` fetch only tabs (with necessary commits)
 
-`git log --format={{format}}`  e.g. oneline | short | medium (default) | full | fuller | email | raw
+`git checkout -b <branch name> <tag name>` creates a new branch from the commit the tag points to
 
-`git log --graph` Git graphs out all the commits - useful for display of branches
-
-`git log --graph --all --oneline --decorate` gives you a nice simple map
-
-## Reset
-
-#### Soft Reset
-`git reset --soft {{tree-ish}}`  
-
-#### Mixed Reset
-`git reset --mixed {{tree-ish}}`
-
-#### Hard Reset
-`git reset --hard {{tree-ish}}`
-
-
+`git checkout <tag name>` checkouts a new tag directly by moving the HEAD pointer

@@ -89,15 +89,13 @@ Why?
 - Merge often
 - Master tracking
 
-## Stash
+## Prune Stale Branches
 
-- By default stash does not include untracked files and that is because there is no conflict
-- Changes can be stashed for later retrieval and use
-- When you either pop or apply your changes into your working directory it is possible of it to cause merge conflicts
+- Delete all stale remote-tracking branches
+- Remote-tracking branches, not remote branches
+- Stale branch: a remote-tracking branch that no longer tracks anything because the actual branch in the remote repository has been deleted.
 
-## Fetch 
-
-- Fetch before you work *This should be the first thing you do in the morning*
-- Fetch before you push
-- Fetch before you go offline
-- Fetch often
+## Remote Branches
+1. Branch on the remote repository <branch name>
+2. Local snapshot of the remote branch <origin name>/<branch name>
+3. Local branch, tracking the remote branch <branch name>
