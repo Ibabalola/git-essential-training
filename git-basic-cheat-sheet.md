@@ -20,11 +20,11 @@
 `git ls-tree {{tree-ish}}` listing the files in the tree, e.g. git ls-tree HEAD
 
 i.e.
->  List of Identifiers 
->  A tree here is directory
->  blob => files which means Binary Large Object
->  This list give us a view of the tree at the specified time of the commit
->  the {{tree-ish}} uses patern matching, adding a / gives us visibility of the content in side a tree
+-  List of Identifiers 
+-  A tree here is directory
+-  blob => files which means Binary Large Object
+-  This list give us a view of the tree at the specified time of the commit
+-  the {{tree-ish}} uses patern matching, adding a / gives us visibility of the content in side a tree
 
 ```
 100644 blob 246eb07d07054f65379d74492142bd18c33ab9ea    .babelrc
