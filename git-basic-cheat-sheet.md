@@ -92,18 +92,18 @@ i.e.
 
 `git diff {{treeish}}..{{treeish}}` any treeish object can be compared even branches
 
-> SPACE BAR to see another change
-> @@ {{ Line Number }} {{ Number of Lines }} @@ ~ configurable
-> Uses paginator, F to go forward, B to go backward
-> -S to change text wrapping and to switch back
-> q to quit / exit paginator
+- SPACE BAR to see another change
+- @@ {{ Line Number }} {{ Number of Lines }} @@ ~ configurable
+- Uses paginator, F to go forward, B to go backward
+- -S to change text wrapping and to switch back
+- q to quit / exit paginator
 
 #### Show Files
 `git show {{SHA-1 Checksum}} --color-words` - 6 - 9 characters is enough for the SHA-1 Checksum, show the diff of a past commit
 
-> adding carat symbol after a SHA-1 Checksum points to the parent commit on any tree-ish reference e.g. {{SHA-1 Checksum}}^
-> adding two carat symbols after a SHA-1 Checksum tells Git to go to the Grandparent e.g. {{SHA-1 Checksum}}^^
-> adding tilde symbol plus a number tell Git to go back n generations e.g. HEAD~1, HEAD ~ has the same effect because the default nuumber for n is 1
+- adding carat symbol after a SHA-1 Checksum points to the parent commit on any tree-ish reference e.g. {{SHA-1 Checksum}}^
+- adding two carat symbols after a SHA-1 Checksum tells Git to go to the Grandparent e.g. {{SHA-1 Checksum}}^^
+- adding tilde symbol plus a number tell Git to go back n generations e.g. HEAD~1, HEAD ~ has the same effect because the default nuumber for n is 1
 
 #### Undo Files
 `git checkout -- {{filename}}` reverts the specified file to the version in the repository of the HEAD of the current branch
@@ -118,9 +118,9 @@ i.e.
 
 `git clean {{ -i | -n | -f }}` will remove untracked files, need to provide a flag
 
-> i = interactive
-> n = do a dry run, let's try this out, let's see what would happen
-> f = runs the command, forces it to clean the files, do with caution 
+- i = interactive
+- n = do a dry run, let's try this out, let's see what would happen
+- f = runs the command, forces it to clean the files, do with caution 
 
 #### Commit Files
 `git commit -m "{{message}}"`  files are now tracked
