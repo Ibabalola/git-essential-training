@@ -155,3 +155,7 @@ git push -d origin <tag name>
 `git checkout -b <branch name> <tag name>` creates a new branch from the commit the tag points to
 
 `git checkout <tag name>` checkouts a new tag directly by moving the HEAD pointer
+
+#### Cherry Pick
+`git cherry-pick <SHA-Check Sum>` to cherry pick a change made in a particular commit
+`git cherry-pick <SHA Check Sum>..<SHA Check Sum>` to specify a range of commits

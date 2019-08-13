@@ -45,3 +45,9 @@
 - Can edit a hunk manually 
 - Most useful when a hunk cannot be split automatically
 - Diff-style line profixes: +, -, #, space
+
+# Cherry-Picking Commits
+- Apply the changes from one or more existing commits
+- Each existing commit is recorded as a new commit on the current branch
+- Conceptually similar to copy and paste
+- New commits have different SHAs
