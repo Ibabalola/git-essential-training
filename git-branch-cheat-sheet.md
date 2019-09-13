@@ -39,7 +39,7 @@
 
 `git merge <origin name>` will bring all the fetched changes into your local master branch
 
-`git merge-base {{branch}} {{branch}}` Return commit where topic branch diverges
+`git merge-base {{branch}} {{branch}}` Returns the commit where topic branches diverges
 
 #### Prune
 

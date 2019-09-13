@@ -35,3 +35,5 @@
 `git fetch --prune` will fetch and prune at the same time. Use `-p` as a shortcut
 
 `git pull` will fetch and merge the changes into your local master branch
+
+`git pull --rebase` To keep local changes at the end of the current branch

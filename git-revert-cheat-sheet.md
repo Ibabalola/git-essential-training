@@ -26,4 +26,6 @@
 `git reset --mixed {{tree-ish}}`
 
 #### Hard Reset
-`git reset --hard {{tree-ish}}`
+`git reset --hard {{tree-ish}}` 
+
+`git reset --hard {{tree-ish}} ORIG_HEAD`
