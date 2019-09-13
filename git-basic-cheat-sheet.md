@@ -96,6 +96,24 @@ i.e.
 
 `git diff {{treeish}}..{{treeish}}` any treeish object can be compared even branches
 
+`git diff {{from-commit}} {{to-commit}} > output.diff` to create a diff patch to a file (.diff)
+
+`git apply {{filepath}}` to apply a patch
+
+`git am feature/0001-some-name.patch` Apply single patch
+
+`git am feature/*.patch` Apply all patches in a directory
+
+`git format-patch {{commit}}..{{commit}}` creates individuals files for each commit
+
+`git format-patch {{branch}}` export all commits on current branch which are not in master branch
+
+`git format-patch -1 {{SHA}}` Export a single commit
+
+`git format-patch {{branch}} -o feature` put patch files into a directory 
+
+`git format-patch {{commit}}..{{commit}} --stdout > feature.patch` Output patches as a single file
+
 - SPACE BAR to see another change
 - @@ {{ Line Number }} {{ Number of Lines }} @@ ~ configurable
 - Uses paginator, F to go forward, B to go backward
@@ -158,4 +176,5 @@ git push -d origin <tag name>
 
 #### Cherry Pick
 `git cherry-pick <SHA-Check Sum>` to cherry pick a change made in a particular commit
+
 `git cherry-pick <SHA Check Sum>..<SHA Check Sum>` to specify a range of commits

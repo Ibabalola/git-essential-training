@@ -28,4 +28,4 @@
 
 `git log --graph` Git graphs out all the commits - useful for display of branches
 
-`git log --graph --all --oneline --decorate` gives you a nice simple map
+`git log --graph --all --oneline --decorate` Useful for visualizing branches

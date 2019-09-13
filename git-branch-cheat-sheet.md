@@ -39,6 +39,8 @@
 
 `git merge <origin name>` will bring all the fetched changes into your local master branch
 
+`git merge-base {{branch}} {{branch}}` Return commit where topic branch diverges
+
 #### Prune
 
 `git remote prune origin` to used to delete the remote tracking branch, the snapshot of the remote branch add `--dry-run` to see what it will do / look like

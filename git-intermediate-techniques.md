@@ -51,3 +51,31 @@
 - Each existing commit is recorded as a new commit on the current branch
 - Conceptually similar to copy and paste
 - New commits have different SHAs
+
+# Create Diff Patches
+- Share changes via files
+- Useful when changes are not ready fora public branch
+- Useful when collaborators do not share a remote
+- Discussion, review, approval process
+
+# Apply Diff Patches
+- Apply changes in a diff patch file to the working directory
+- Makes changes, but not commits
+- No commit history transferred
+
+# Create Formatted Patches
+- Export each commit un Unix mail format
+- Useful for email distribution of changes
+- Includes commit message
+- One commit per file by default
+
+# Apply Formatted Patch
+- Extract author, commit message, and changes from a mailbox message and apply them to the current branch
+- Similar to cherry-picking: same changes different SHAs
+- Commit history is transferred
+
+# Rebase Commits
+- Take commits from a branch and replay them at the end of another branch
+- Useful to integrate recent commits without merging
+- Maintains a cleaner, more linear project history
+- Ensures topic branch commits apply cleanly
