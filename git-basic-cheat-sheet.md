@@ -64,6 +64,8 @@ i.e.
 > Can have any name
 > Ideally in your user directory C:\Users\isaac.babalola
 
+`git config --global alias.praise blame` to change to alias of blame to praise
+
 ## Commands
 
 #### Add Files
@@ -178,3 +180,19 @@ git push -d origin <tag name>
 `git cherry-pick <SHA-Check Sum>` to cherry pick a change made in a particular commit
 
 `git cherry-pick <SHA Check Sum>..<SHA Check Sum>` to specify a range of commits
+
+#### Blame
+`git blame -w <filename.txt>` Annotate file with commits details -w to ignore whitespaces
+
+`git blame -L 5,10 <filename.txt>` to show a certain number of lines within a file
+
+`git annotate <filename.txt>` similar information to git blame but in a different formate
+
+#### Bisect
+`git bisect start` to start a bisect session
+
+`git bisect bad <treeish>` last known bad 
+
+`git bisect good <treeish>` last known good 
+
+`git bisect reset` reset to your working directory back to head your was at before you started bisecting.

@@ -79,3 +79,16 @@
 - Useful to integrate recent commits without merging
 - Maintains a cleaner, more linear project history
 - Ensures topic branch commits apply cleanly
+
+# Blame
+- Browse an annotated file
+- Determine who changed which lines in a file and why
+- Useful for probing the history behind a file's contents
+- Useful for identifying which commit introduced a bug
+
+# Bisect
+- Find the commit that introduced a bug or regression
+- Mark last good revision and first bad revision
+- Resets code to mid-point
+- Marks as good or bad revision
+- Repeat
