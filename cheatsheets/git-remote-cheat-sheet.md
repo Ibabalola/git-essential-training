@@ -18,7 +18,7 @@
 
 `git push -u <origin name> <branch name>` push to the origin remote to the master branch
 
-`git push --set-upstream origin <feature_branch>` to push the current branch and sets up the remote as upstream
+`git push --set-upstream <origin name> <feature_branch>` to push the current branch and sets up the remote as upstream origin name = origin
 
 `git push -d <origin name> <branch name>` deletes remote branch
 

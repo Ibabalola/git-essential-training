@@ -30,6 +30,8 @@
 
 `git branch -u <origin name>/<branch name> <branch name>` use to set an upstream for a branch
 
+`git branch --set-upstream-to=origin/<branch> <branch name>` used to connect local branch to remote branch on server
+
 #### merge code
 `git merge <branch_name>` will merge change from feature branch the current branch
 
